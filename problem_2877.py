@@ -11,7 +11,7 @@ The result format is in the following example.
 
 import pandas as pd
 
-def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
+def createDataframe(student_data: list) -> pd.DataFrame:
     ids = [x[0] for x in student_data]
     age = [x[1] for x in student_data]
     return pd.DataFrame({"student_id": ids, "age": age})
